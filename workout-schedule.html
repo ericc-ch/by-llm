@@ -1,0 +1,1085 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detailed Late-Night Bodyweight Workout Schedule</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      :root {
+        --gb-bg0: #282828;
+        --gb-bg1: #3c3836;
+        --gb-bg2: #504945;
+        --gb-bg3: #665c54;
+        --gb-bg4: #7c6f64;
+        --gb-fg: #ebdbb2;
+        --gb-fg0: #fbf1c7;
+        --gb-fg1: #ebdbb2;
+        --gb-fg2: #d5c4a1;
+        --gb-fg3: #bdae93;
+        --gb-fg4: #a89984;
+        --gb-red: #cc241d;
+        --gb-red-bright: #fb4934;
+        --gb-green: #98971a;
+        --gb-green-bright: #b8bb26;
+        --gb-yellow: #d79921;
+        --gb-yellow-bright: #fabd2f;
+        --gb-blue: #458588;
+        --gb-blue-bright: #83a598;
+        --gb-purple: #b16286;
+        --gb-purple-bright: #d3869b;
+        --gb-aqua: #689d6a;
+        --gb-aqua-bright: #8ec07c;
+        --gb-gray: #a89984;
+        --gb-gray-dark: #928374;
+        --gb-orange: #d65d0e;
+        --gb-orange-bright: #fe8019;
+      }
+
+      body {
+        font-family: "Inter", sans-serif;
+        line-height: 1.5;
+        background-color: var(--gb-bg0);
+        color: var(--gb-fg);
+      }
+      .workout-day-card {
+        border: 1px solid var(--gb-bg3);
+        border-radius: 0.25rem;
+        padding: 1rem 1.25rem;
+        margin-bottom: 1.5rem;
+        background-color: var(--gb-bg1);
+        box-shadow: none;
+      }
+      .exercise-card {
+        background-color: var(--gb-bg0);
+        border: 1px solid var(--gb-bg2);
+        border-radius: 0.125rem;
+        padding: 0.75rem;
+        margin-bottom: 1rem;
+      }
+      .exercise-card:last-child {
+        margin-bottom: 0;
+      }
+      .exercise-title {
+        font-size: 1.125rem;
+        font-weight: 600;
+        color: var(--gb-fg0);
+        margin-bottom: 0.25rem;
+      }
+      .exercise-beginner-note {
+        font-size: 0.75rem;
+        color: var(--gb-fg2);
+        background-color: var(--gb-bg2);
+        padding: 0.375rem 0.5rem;
+        border-radius: 0.125rem;
+        margin-bottom: 0.75rem;
+        border-left: 3px solid var(--gb-blue);
+      }
+      .details-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+        gap: 0.5rem;
+        font-size: 0.75rem;
+      }
+      .detail-item {
+        background-color: var(--gb-bg1);
+        padding: 0.375rem 0.5rem;
+        border-radius: 0.125rem;
+        border: 1px solid var(--gb-bg3);
+      }
+      .detail-label {
+        font-weight: 500;
+        color: var(--gb-fg1);
+        display: block;
+        margin-bottom: 0.1rem;
+      }
+      .detail-value {
+        color: var(--gb-fg3);
+      }
+
+      .important-notes-card {
+        background-color: var(--gb-bg1);
+        border: 1px solid var(--gb-blue);
+        border-left-width: 4px;
+      }
+      .important-notes-card h2 {
+        color: var(--gb-blue-bright);
+      }
+
+      .rest-day-card {
+        background-color: var(--gb-bg1);
+        border: 1px solid var(--gb-green);
+        border-left-width: 4px;
+      }
+      .rest-day-card h2 {
+        color: var(--gb-green-bright);
+      }
+
+      .optional-day-card {
+        background-color: var(--gb-bg1);
+        border: 1px solid var(--gb-yellow);
+        border-left-width: 4px;
+      }
+      .optional-day-card h2 {
+        color: var(--gb-yellow-bright);
+      }
+
+      .complete-rest-card {
+        background-color: var(--gb-bg1);
+        border: 1px solid var(--gb-red);
+        border-left-width: 4px;
+      }
+      .complete-rest-card h2 {
+        color: var(--gb-red-bright);
+      }
+
+      ::-webkit-scrollbar {
+        width: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: var(--gb-bg0);
+      }
+      ::-webkit-scrollbar-thumb {
+        background: var(--gb-bg4);
+        border-radius: 0.125rem;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: var(--gb-gray);
+      }
+
+      .text-4xl {
+        font-size: 2rem;
+      }
+      .text-3xl {
+        font-size: 1.75rem;
+      }
+      .text-2xl {
+        font-size: 1.375rem;
+      }
+      .text-lg {
+        font-size: 1rem;
+      }
+      .mb-10 {
+        margin-bottom: 2rem;
+      }
+      .mb-8 {
+        margin-bottom: 1.5rem;
+      }
+      .mb-5 {
+        margin-bottom: 1rem;
+      }
+      .mt-3 {
+        margin-top: 0.5rem;
+      }
+      .space-y-3 > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 0.5rem;
+      }
+      .space-y-8 > :not([hidden]) ~ :not([hidden]) {
+        margin-top: 1.5rem;
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="antialiased">
+    <div class="container mx-auto p-3 md:p-4 max-w-4xl">
+      <header class="mb-8 text-center">
+        <h1 class="text-3xl md:text-4xl font-bold" style="color: var(--gb-fg0)">
+          Your Late-Night Workout Plan
+        </h1>
+        <p style="color: var(--gb-fg2)" class="mt-2 text-md">
+          Bodyweight Hypertrophy Schedule &mdash; Starting 10:00 PM
+        </p>
+      </header>
+
+      <section
+        id="important-notes"
+        class="workout-day-card important-notes-card"
+      >
+        <h2 class="text-2xl font-semibold mb-4">
+          Important Notes Before You Start
+        </h2>
+        <ul
+          class="list-disc list-inside space-y-2 text-sm"
+          style="color: var(--gb-fg1)"
+        >
+          <li>
+            <strong>Reference Guide:</strong> This schedule details specific
+            beginner exercises. For progressions and further exercise details,
+            always refer to
+            <strong
+              >Table 1: Bodyweight Exercise Progressions by Muscle Group</strong
+            >
+            in the "Home Bodyweight Hypertrophy Guide."
+          </li>
+          <li>
+            <strong>Warm-up (5-10 mins before each workout):</strong> Dynamic
+            stretches like arm circles, torso twists, leg swings, bodyweight
+            squats (partial to full), cat-cow stretches.
+          </li>
+          <li>
+            <strong>Cool-down (5-10 mins after each workout):</strong> Static
+            stretches like chest stretch, shoulder stretch, hamstring stretch,
+            quad stretch, child's pose. Hold each for 20-30 seconds.
+          </li>
+          <li>
+            <strong>Tempo Example (from guide):</strong> 3-1-X-1 = 3 seconds
+            eccentric (lowering), 1-second pause at bottom/stretch, Explosive
+            concentric (lifting), 1-second pause at top/contraction. Adjust
+            based on exercise. For isometrics, "Reps" will indicate hold time.
+          </li>
+          <li>
+            <strong>"Near Failure":</strong> As a beginner, this means
+            performing repetitions until you feel you could only do 1-2 more
+            *with good form*. Prioritize correct form over hitting higher rep
+            numbers initially.
+          </li>
+          <li>
+            <strong>Progression:</strong> Once you can comfortably complete all
+            sets and reps at the *upper end* of the rep range with good form and
+            the prescribed tempo for the listed beginner variation, progress to
+            the next variation listed in Table 1 of the guide, or increase
+            reps/Time Under Tension (TUT).
+          </li>
+          <li>
+            <strong>Hydration:</strong> Drink water before, during, and after
+            your workouts.
+          </li>
+          <li>
+            <strong>Listen to Your Body:</strong> Late-night workouts can affect
+            sleep for some. Monitor how you feel. If you experience sharp pain
+            during an exercise, stop or regress. Muscle soreness (DOMS) is
+            normal for beginners.
+          </li>
+          <li>
+            <strong>Nutrition Timing:</strong> Ensure your last main meal is not
+            too close to 10 PM. A light, easily digestible snack 30-60 minutes
+            before your workout might be suitable if needed. Have your
+            post-workout protein/meal, but avoid overly heavy food right before
+            sleep.
+          </li>
+        </ul>
+      </section>
+
+      <section id="day1" class="workout-day-card">
+        <h2 class="text-2xl font-bold mb-2" style="color: var(--gb-fg0)">
+          Workout Day 1:
+          <span style="color: var(--gb-aqua-bright)">Upper Body A</span>
+        </h2>
+        <p class="text-sm mb-6" style="color: var(--gb-fg3)">
+          (Example: Monday, 10:00 PM Start)
+        </p>
+        <div class="space-y-6">
+          <article class="exercise-card">
+            <h3 class="exercise-title">1. Push-up Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose one):</strong> Wall Push-ups
+              (Easiest. Search "Wall Push-ups tutorial") OR Knee Push-ups
+              (Search "Knee Push-ups tutorial")
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Chest, Shoulders, Triceps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">8-15 (near failure)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">2. Pike Push-up Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Pike Push-up (hands wider,
+              smaller Range of Motion) (Search "Beginner Pike Push-up tutorial"
+              or "Pike Push-up hands wide small ROM")
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Shoulders, Triceps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">6-12 (near failure)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              3. Bodyweight Renegade Row (from Plank)
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Knee Plank Renegade Row
+              (Search "Knee Plank Renegade Row tutorial")
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value"
+                  >Upper Back, Lats, Core, Biceps</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">8-12 per side</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">2-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              4. Diamond Push-up / Close-Grip Push-up Variation
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Knee Diamond Push-ups (Search
+              "Knee Diamond Push-ups tutorial")
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Triceps, Chest</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">AMRAP (good form)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">2-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              5. Isometric Bicep Curl (Self-Resisted, 90° angle)
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Self-Resisted at 90° (gentle
+              to moderate resistance). Search "Self-resisted isometric bicep
+              curl". Focus on bicep contraction.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Biceps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value"
+                  >30-45s hold per arm (adjust from 10-15s if needed)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">N/A (hold)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">6. Plank Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose one):</strong> Knee Plank hold
+              (Search "Knee Plank tutorial") OR Forearm Plank hold (Search
+              "Forearm Plank tutorial")
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Core</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value"
+                  >30-60s hold (adjust from 20-30s if needed)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">N/A (hold)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="day2" class="workout-day-card">
+        <h2 class="text-2xl font-bold mb-2" style="color: var(--gb-fg0)">
+          Workout Day 2:
+          <span style="color: var(--gb-green-bright)">Lower Body A</span>
+        </h2>
+        <p class="text-sm mb-6" style="color: var(--gb-fg3)">
+          (Example: Tuesday, 10:00 PM Start)
+        </p>
+        <div class="space-y-6">
+          <article class="exercise-card">
+            <h3 class="exercise-title">1. Bodyweight Squat Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose one):</strong> Partial Squats OR
+              Assisted Squats (holding support). Search tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Quads, Glutes, Hamstrings</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">10-20 (near failure)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">2. Lunge Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose one):</strong> Static Lunges
+              (hold position) OR Assisted Lunges (holding support). Search
+              tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Quads, Glutes, Hamstrings</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">8-15 per leg</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1 (or hold)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">3. Glute Bridge Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Standard Glute Bridge (double
+              leg, small ROM initially, focusing on glute squeeze). Search
+              "Glute Bridge tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Glutes, Hamstrings</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">15-25 (double leg)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">2-1-X-1 (2s pause at top)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">4. Calf Raise Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Double-Leg Calf Raises (on
+              floor). Search "Double Leg Calf Raise tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Calves</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">15-25</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value"
+                  >2-2-X-1 (2s pause top & bottom)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">5. Single-Leg Bodyweight RDL</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Partial Single-Leg RDL (focus
+              on balance, limited ROM, use support if needed). Search "Beginner
+              Single Leg RDL tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Hamstrings, Glutes, Balance</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">10-15 per leg</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-2-1 (slow & controlled)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">6. Lying Leg Raise Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Bent-Knee Leg Raises (Reverse
+              Crunch). Search "Bent Knee Leg Raise tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Lower Abs, Hip Flexors</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">12-20</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">2-0-2-0 (controlled)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="day3" class="workout-day-card rest-day-card">
+        <h2 class="text-2xl font-bold mb-2">
+          Workout Day 3: <span>Rest or Active Recovery</span>
+        </h2>
+        <p class="text-sm mb-4" style="color: var(--gb-fg3)">
+          (Example: Wednesday)
+        </p>
+        <p style="color: var(--gb-fg1)">No intense workout.</p>
+        <p class="mt-1" style="color: var(--gb-fg1)">
+          <strong
+            >Optional Active Recovery (20-30 minutes, can be done
+            anytime):</strong
+          >
+          Light walk, gentle stretching, yoga, mobility work.
+        </p>
+      </section>
+
+      <section id="day4" class="workout-day-card">
+        <h2 class="text-2xl font-bold mb-2" style="color: var(--gb-fg0)">
+          Workout Day 4:
+          <span style="color: var(--gb-aqua-bright)">Upper Body B</span>
+        </h2>
+        <p class="text-sm mb-6" style="color: var(--gb-fg3)">
+          (Example: Thursday, 10:00 PM Start)
+        </p>
+        <div class="space-y-6">
+          <article class="exercise-card">
+            <h3 class="exercise-title">1. Challenging Push-up Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose based on progress):</strong>
+              Incline Push-ups (hands on elevated surface) OR Standard Knee
+              Push-ups. Search tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value"
+                  >Upper Chest, Shoulders, Triceps</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">8-15 (near failure)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">2. Prone Y-Raise or Swimmer</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (for Y-Raise):</strong> Prone Y-Raise
+              (small ROM, thumbs up, focus on squeezing shoulder blades). Search
+              "Prone Y-Raise tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Upper Back, Rear Delts</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">12-20</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">2-1-2-1 (1s pause at top)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              3. Bodyweight Triceps Extension (Skullcrusher)
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Knee Triceps Extensions (hands
+              slightly elevated if needed). Search "Knee Bodyweight Triceps
+              Extension tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Triceps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">8-15 (near failure)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-X-1</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">4. Plank to Downward Dog</h3>
+            <p class="exercise-beginner-note">
+              <strong>Exercise:</strong> Search "Plank to Downward Dog
+              transition tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Shoulders, Core</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">10-15</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">Slow, controlled</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              5. Isometric Bicep Curl (Self-Resisted, varied angles)
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Self-Resisted at varied angles
+              (e.g., 45°, 90°, 135°) with gentle to moderate resistance. Search
+              "Self-resisted isometric bicep curl".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Biceps</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">20-30s hold per angle/arm</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">N/A (hold)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">6. Side Plank Variation</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Knee Side Plank hold. Search
+              "Knee Side Plank tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Obliques, Core</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value"
+                  >30-45s hold/side (or 10-15 Hip Dips)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">N/A (hold) or controlled</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="day5" class="workout-day-card">
+        <h2 class="text-2xl font-bold mb-2" style="color: var(--gb-fg0)">
+          Workout Day 5:
+          <span style="color: var(--gb-green-bright)">Lower Body B</span>
+        </h2>
+        <p class="text-sm mb-6" style="color: var(--gb-fg3)">
+          (Example: Friday, 10:00 PM Start)
+        </p>
+        <div class="space-y-6">
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              1. Pistol Squat Progression / Advanced Squat
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (Choose one):</strong> Assisted Pistol
+              Squats (holding support/to chair) OR Full Bodyweight Squats (focus
+              on depth). Search tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Quads, Glutes, Balance</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value"
+                  >5-10/leg (Pistol) or 10-20 (Squat)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">Controlled (e.g., 3-1-2-1)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">
+              2. Challenging Lunge/Single Leg Variation
+            </h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise (If no chair):</strong> Deep Bodyweight
+              Squat with Pause (2s at bottom) OR Reverse Lunges. Search
+              tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Quads, Glutes</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value"
+                  >8-15/leg (Lunge) or total (Squat)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value"
+                  >3-2-X-1 (2s pause if applicable)</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60-90 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">3. Good Morning (Bodyweight)</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Partial Good Morning (limited
+              ROM, focus on flat back & hip hinge). Search "Bodyweight Good
+              Morning tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value"
+                  >Hamstrings, Glutes, Lower Back</span
+                >
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">12-20 (focus on form)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">3-1-2-1 (slow & controlled)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">4. Standing Calf Raise</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Double-Leg Calf Raises (on
+              floor). If easy, use a step for more ROM. Search tutorials.
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Calves</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3-4</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">20-30 (AMRAP on last set)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">1-3-X-1 (3s pause at top)</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">45-60 seconds</span>
+              </div>
+            </div>
+          </article>
+          <article class="exercise-card">
+            <h3 class="exercise-title">5. Mountain Climbers</h3>
+            <p class="exercise-beginner-note">
+              <strong>Beginner Exercise:</strong> Slow Mountain Climbers (focus
+              on form, core engaged, stable hips). Search "Slow Mountain
+              Climbers tutorial".
+            </p>
+            <div class="details-grid">
+              <div class="detail-item">
+                <span class="detail-label">Target:</span
+                ><span class="detail-value">Core, Quads, Shoulders</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Sets:</span
+                ><span class="detail-value">3</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Reps:</span
+                ><span class="detail-value">30-45s</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Tempo:</span
+                ><span class="detail-value">Fast but controlled</span>
+              </div>
+              <div class="detail-item">
+                <span class="detail-label">Rest:</span
+                ><span class="detail-value">60 seconds</span>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section id="day6" class="workout-day-card optional-day-card">
+        <h2 class="text-2xl font-bold mb-2">
+          Workout Day 6:
+          <span>Optional Light Full Body / Skill Work / Active Recovery</span>
+        </h2>
+        <p class="text-sm mb-4" style="color: var(--gb-fg3)">
+          (Example: Saturday)
+        </p>
+        <p style="color: var(--gb-fg1)">
+          No intense workout. Can be done anytime.
+        </p>
+        <p class="mt-1" style="color: var(--gb-fg1)">
+          <strong>Options:</strong> Light walk, yoga, practice form on
+          challenging exercises (not to failure), light full-body circuit (1-2
+          sets of easier variations of a push, pull, squat, core).
+        </p>
+      </section>
+
+      <section id="day7" class="workout-day-card complete-rest-card">
+        <h2 class="text-2xl font-bold mb-2">
+          Workout Day 7: <span>Complete Rest</span>
+        </h2>
+        <p class="text-sm mb-4" style="color: var(--gb-fg3)">
+          (Example: Sunday)
+        </p>
+        <p style="color: var(--gb-fg1)">
+          Essential for muscle growth and recovery.
+        </p>
+      </section>
+
+      <footer class="text-center mt-10 mb-6">
+        <p class="text-xs" style="color: var(--gb-gray)">
+          Remember to consult the "Home Bodyweight Hypertrophy Guide" for full
+          details and progressions. Stay consistent and listen to your body!
+        </p>
+      </footer>
+    </div>
+  </body>
+</html>
